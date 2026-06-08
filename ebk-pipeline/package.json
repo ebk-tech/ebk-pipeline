@@ -1,0 +1,14 @@
+{
+  "name": "ebk-pipeline",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "engine": "node engine/server.js",
+    "concierge": "node model-server/concierge.js",
+    "seed": "node scripts/seed-territories.js",
+    "test": "node scripts/test-classify.js"
+  },
+  "dependencies": { "pg": "^8.11.3" }
+}
